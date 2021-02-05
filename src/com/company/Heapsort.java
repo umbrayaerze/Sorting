@@ -2,7 +2,8 @@ package com.company;
 
 import java.util.Random;
 
-public class Main {
+public class Heapsort {
+
     public void sort(int arr[])
     {
         int n = arr.length;
@@ -62,14 +63,27 @@ public class Main {
     public static void main(String args[]){
 
 
-
+    {
         int arr[] = { 2,6,9};
         int n = arr.length;
+
         Main ob = new Main();
         ob.sort(arr);
+
         System.out.println("Sorted array is");
         printArray(arr);
+    }
 
+      /*   int[] arr = new int[20];
+        int n = arr.length;
+        arr[i] =getRandomNumberUsingNextInt(1,100);
 
+        public int getRandomNumberUsingNextInt(int min, int max){
+            Random random = new Random();
+            return random.nextInt(max - min) + min;
+        } */
     }
 }
+
+
+

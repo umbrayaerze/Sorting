@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Heapsort {
 
-    public void sort(int arr[])
+    public static int[] sort(int arr[])
     {
         int n = arr.length;
 
@@ -22,10 +22,11 @@ public class Heapsort {
 
             heapify(arr, i, 0);
         }
+        return arr;
     }
 
 
-    void heapify(int arr[], int n, int i)
+    static void heapify(int arr[], int n, int i)
     {
         int largest = i;
         int l = 2 * i + 1;
@@ -51,8 +52,9 @@ public class Heapsort {
     }
 
 
-    static void printArray(int arr[])
+    static void printArray(int[] arr)
     {
+        arr = sort(arr);
         int n = arr.length;
         for (int i = 0; i < n; ++i)
             System.out.print(arr[i] + " ");

@@ -60,29 +60,6 @@ public class Heapsort {
     }
 
 
-    public static void main(String args[]){
-
-
-    {
-        int arr[] = { 2,6,9};
-        int n = arr.length;
-
-        Main ob = new Main();
-        ob.sort(arr);
-
-        System.out.println("Sorted array is");
-        printArray(arr);
-    }
-
-      /*   int[] arr = new int[20];
-        int n = arr.length;
-        arr[i] =getRandomNumberUsingNextInt(1,100);
-
-        public int getRandomNumberUsingNextInt(int min, int max){
-            Random random = new Random();
-            return random.nextInt(max - min) + min;
-        } */
-    }
 }
 
 

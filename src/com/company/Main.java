@@ -17,7 +17,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        int[] myDirtyArray = randomArray(20000);
+        int[] myDirtyArray = randomArray(30);
         System.out.println(Arrays.toString(myDirtyArray));
 
         long startTime = System.currentTimeMillis();

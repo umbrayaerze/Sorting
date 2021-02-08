@@ -17,12 +17,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        int[] myDirtyArray = randomArray(8);
-
-        System.out.println(Arrays.toString(myDirtyArray));
-
-        MergeSort.mergeSort(myDirtyArray, 0, myDirtyArray.length-1);
-
+        int[] myDirtyArray = randomArray(20000);
         System.out.println(Arrays.toString(myDirtyArray));
     }
 }

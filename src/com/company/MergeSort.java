@@ -14,17 +14,17 @@ public class MergeSort {
     }
 
     public static void merge(int[] array, int low, int mid, int high) {
-        // Creating temporary subarrays
+        // Creating temporary sub arrays
         int leftArray[] = new int[mid - low + 1];
         int rightArray[] = new int[high - mid];
 
-        // Copying our subarrays into temporaries
+        // Copying our sub arrays into temporaries
         for (int i = 0; i < leftArray.length; i++)
             leftArray[i] = array[low + i];
         for (int i = 0; i < rightArray.length; i++)
             rightArray[i] = array[mid + i + 1];
 
-        // Iterators containing current index of temp subarrays
+        // Iterators containing current index of temp sub arrays
         int leftIndex = 0;
         int rightIndex = 0;
 

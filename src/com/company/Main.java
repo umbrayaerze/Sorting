@@ -12,23 +12,19 @@ public class Main {
             list[i] = random.nextInt();
         }
         return list;
-
     }
 
 
     public static void main(String[] args) {
-        int[] myDirtyArray = randomArray(30);
+        int[] myDirtyArray = randomArray(20000);
         System.out.println(Arrays.toString(myDirtyArray));
 
         long startTime = System.currentTimeMillis();
         MergeSort.mergeSort(myDirtyArray, 0, myDirtyArray.length-1);
-//        Heapsort;
+        Heapsort.printArray(myDirtyArray);
 //        quickSort;
         System.out.println(Arrays.toString(myDirtyArray));
         long endTime = System.currentTimeMillis();
         System.out.println("That took " + (endTime - startTime) + " milliseconds");
-
-
-
     }
 }

@@ -22,7 +22,7 @@ public class Main {
         long startTime = System.currentTimeMillis();
         MergeSort.mergeSort(myDirtyArray, 0, myDirtyArray.length-1);
         Heapsort.printArray(myDirtyArray);
-//        quickSort;
+        quickSort.sort(myDirtyArray, 0, myDirtyArray.length-1);
         System.out.println(Arrays.toString(myDirtyArray));
         long endTime = System.currentTimeMillis();
         System.out.println("That took " + (endTime - startTime) + " milliseconds");
